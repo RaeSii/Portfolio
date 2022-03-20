@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <h1>Rachel Schaaf</h1>
@@ -25,47 +28,73 @@
     </header>
 
     <section>
-     <div id="about-me">
-        <h2>About Me</h2>
+        <h2 class="col-2">About Me</h2>
+        <div id="about-me">
         </div>
         <div>
             <p>
-            Hi, learning to be a Fullstack Web Devloper based out of Los Angeles, California.
-            Full stack developers are computer programmers who are proficient in both front and back end coding. 
-            Their primary responsibilities include designing user interactions on websites, developing servers, and databases for website functionality, and coding for mobile platforms.
+                Hi, learning to be a Fullstack Web Devloper based out of Los Angeles, California.
+                Full stack developers are computer programmers who are proficient in both front and back end coding.
+                Their primary responsibilities include designing user interactions on websites, developing servers, and
+                databases for website functionality, and coding for mobile platforms.
                 <br>
-            <br>Please, Music! Think to card everywhere. Super strong brings to the gate. That jacket is wonderful in the sky to bring the work over.
-            In the guise of other clouds there will be more sunshine and rain. This is the cause of just nothing to say and just doing. To all that are reading this, do not roll the dough.
-            Just kneed the bike out of reach to the other side of the jungle. Thank you for reading all this blah blah blah.<br>
-        </p>
-        
-    </div> 
-    <img src="./assets/images/Avatar.jpg" alt="avatar" style="border-radius: 1px;" />  
+                <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis vel architecto, hic sit porro
+                repudiandae officiis, tenetur officia dignissimos optio eaque facilis quo aspernatur tempora. Inventore
+                ad doloribus voluptatibus non.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quae quod debitis veniam illo eaque
+                vero iusto odit veritatis voluptas, incidunt cumque, accusamus at minima molestiae adipisci. Placeat,
+                distinctio recusandae.
+            </p>
+
+        </div>
+        <img src="./assets/images/Avatar.jpg" class="img-thumbnail" alt="avatar" style="border-radius: 1px;" />
     </section>
 
-    <section id="work">
-        <h2>Work</h2>
-        <div id="surf">
-            <a href="www.noprojectyet.com"><img src="./assets/images/content2.jpg" alt="surf" style="width: 100%;" />Surf Report</a>
-        </div>
-        <div id="projects">
-            <a href="www.placeholder.com">
-             <img src="./assets/images/ledwall.jfif" alt="ledwall" style="width: 100%;" />LED Wall</a>
-        </div>
-        <div id="projects">
-            <a href="www.placeholder.com">
-            <img src="./assets/images/calculator.png" alt="calculator" style="width: 100%;" />Calculator</a>
-        </div>
-        <div id="projects">
-            <a href="www.placeholder.com"><img src="./assets/images/pastels.png" alt="pastels" style="width: 100%;" />Pastel Puzzels</a>
-        </div>
-        <div id="projects">
-            <a href="www.placeholder.com"><img src="./assets/images/run-buddy.png" alt="run-buddy" style="width: 100%;" />Run Buddy</a>
+    <section>
+        <h2 class="col-2" id="work">Work</h2>
+        <div class="d-flex flex-wrap">
+            <div class="card row" style="width: 100%;">
+                <img src="./assets/images/img4.png" class="card-img-top" alt="road-path">
+                <div class="card-body">
+                    <h5 class="card-title">Road-Buddy</h5>
+                    <a href="https://justynsubrai.github.io/Road-Buddy/" class="btn btn-primary">Travel App</a>
+                </div>
+            </div>
+            <div class="card" style="width: 35rem;">
+                <img src="./assets/images/img5.png" class="card-img-top" alt="hourly-planner">
+                <div class="card-body">
+                    <h5 class="card-title">Work Day Scheduler</h5>
+                    <a href="https://raesii.github.io/work-day-scheduler/" class="btn btn-primary">Scheduler App</a>
+                </div>
+            </div>
+            <div class="card" style="width: 35rem;">
+                <img src="./assets/images/img3.png" class="card-img-top" alt="weather-app">
+                <div class="card-body">
+                    <h5 class="card-title">Travel Weather App</h5>
+                    <a href="https://raesii.github.io/weather-dashboard/" class="btn btn-primary">Weather App</a>
+                </div>
+            </div>
+            <div class="card" style="width: 35rem;">
+                <img src="./assets/images/img2.png" class="card-img-top" alt="quiz-app">
+                <div class="card-body">
+                    <h5 class="card-title">Code Quiz</h5>
+                    <a href="https://raesii.github.io/code-quiz/" class="btn btn-primary">Quiz App</a>
+                </div>
+            </div>
+            <div class="card" style="width: 35rem;">
+                <img src="./assets/images/img1.png" class="card-img-top" alt="team-roster">
+                <div class="card-body">
+                    <h5 class="card-title">Team Roster</h5>
+                    <a href="https://raesii.github.io/team-info-maker/" class="btn btn-primary">Team Info</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <section>
+        <h2 class="col-2" id="contact">Contact Me</h2>
         <ul>
             <li>
                 <a>555-555-1212</a>
@@ -88,6 +117,4 @@
         <h4>Made with HTML/CSS by RSchaaf</h4>
     </footer>
 </body>
-
-
 </html>
